@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+/*Mobile design*/
+
+.bienvenido {
+    color: white;
+    margin: 25px 15px 0 15px;
+    text-align: center;
+}
+
+body {
+    background-color: #3782FF;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons {
+    background-color: white;
+    border: 4px solid #F7DC5f;
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.buttons:hover {
+    background-color: #F7DC5f;
+}
+
+.button-wrapper {
+    display: flex;
+    margin-top: 10px;
+}
+
+.img-pastel {
+    height: auto;
+    width: 100%;
+}
+
+.logo {
+    height: 100px;
+    width: 150px;
+}
+
+.log-wrap {
+    align-items: center;
+    display: flex;
+}
+
+.resumen {
+    margin-top: 80px;
+}
+
+.sentiment {
+    color: white;
+    text-align: center;
+}
+
+.subtitle {
+    color: white;
+    font-family: 'Bree Serif', serif;
+    font-size: 15px;
+}
+
+#textoemociones {
+    height: 80px;
+    width: 93%;
+}
+
+.text-wrap {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/*Desktop Design*/
+
+@media screen and (min-width: 1022px) {
+    .bienvenido {
+        font-size: 35px;
+    }
+    .buttons {
+        font-size: 30px;
+        height: 100px;
+        margin-left: 100px;
+        width: 250px;
+    }
+    .button-wrapper {
+        margin-top: 60px;
+    }
+    .img-pastel {
+        display: block;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+    .logo {
+        height: auto;
+        width: auto;
+    }
+    .log-wrap {
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .presente {
+        margin-top: 150px;
+    }
+    .resumen {
+        margin-top: 200px;
+    }
+    .sentiment {
+        font-size: 150px;
+    }
+    .subtitle {
+        font-size: 50px;
+        margin-right: 60px;
+    }
+    #textoemociones {
+        font-size: 20px;
+        height: 250px;
+        width: 85%;
+    }
+}
