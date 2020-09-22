@@ -1,0 +1,5 @@
+stopwords
+word_tokenize
+wordnet
+punkt
+vader_lexicon

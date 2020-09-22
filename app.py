@@ -12,8 +12,6 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from os.path import join, dirname, realpath
 
-nltk.download('vader_lexicon')
-
 app = Flask(__name__)
 
 # Variables globales con rutas de archivos estaticos y textos que se envian al frontend
