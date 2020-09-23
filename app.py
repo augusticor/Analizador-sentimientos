@@ -85,16 +85,19 @@ def work(input_texto):
 
 	# Contar la cantidad de veces que esta un sentimiento
 	count = Counter(emotions_list)
-	final = {k: v for k, v in sorted(count.items(), key=lambda item: item[1])}
-	sentiment_found = list(final.keys())[-1]
+	if len(count) > 0:
+		final = {k: v for k, v in sorted(count.items(), key=lambda item: item[1])}
+		sentiment_found = list(final.keys())[-1]
 
-	# Realizar la grafica de los sentimientos y guardarla en un archivo de imagen
-	fig1, ax1 = plt.subplots()
-	ax1.pie([float(v) for v in count.values()], labels=[k for k in count], autopct='%1.1f%%', startangle=90,
-			wedgeprops={'alpha': 0.9})
-	ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-	fig1.set_facecolor('#3782FF')
-	plt.savefig(static_deploy_graph)
+		# Realizar la grafica de los sentimientos y guardarla en un archivo de imagen
+		fig1, ax1 = plt.subplots()
+		ax1.pie([float(v) for v in count.values()], labels=[k for k in count], autopct='%1.1f%%', startangle=90,
+				wedgeprops={'alpha': 0.9})
+		ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+		fig1.set_facecolor('#3782FF')
+		plt.savefig(static_deploy_graph)
+	else:
+		sentiment_found = 'Expresate más ! No se encontraron sentimientos, ingresa algo mas largo'
 
 	return sentiment_found
 
