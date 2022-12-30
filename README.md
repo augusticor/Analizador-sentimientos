@@ -12,7 +12,7 @@ Usa distintos metodos de N.L.P. como ***"stop words"*** o ***"tokenized_words"**
 El texto a evaluar puede estar escrito en inglés o en español, ya que mediante la librería "googletrans" se puede traducir a inglés para mejor procesamiento.
 
 
-### Instalando
+### Instalación
 Aunque en el archivo [Requerimientos](requirements.txt) se encuentra el nombre y la versión de las distintas dependencias, acá se mencionan las mas importantes, para el proceso de instalación y actualización usar [PIP](https://pip.pypa.io/en/stable/quickstart/)
 
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/)
@@ -41,14 +41,10 @@ pip install googletrans
 pip install matplotlib==3.3.2
 ```
 
-### Deployment
-La aplicación fue desplegada usando Heroku.
-#### Analizador de sentimientos : **_[Sentimenti](https://sentimienti.herokuapp.com/)_**
-Para el despliegue correcto de la app se debe crear el archivo [Procfile](Procfile) con el siguiente contenido :
-"web: gunicorn app:app", donde :
-```
-- web es el tipo de app
-- gunicorn la librería para el despliegue
-- app el nombre del archivo principal o root
-- app el nombre de la aplicación Flask "app = Flask(__name__)"
-```
+### Integrantes
+Este proyecto fue desarrollado en la asignatura **Inteligencia Computacional**, en la carrera universitaria Ingeniería de Sistemas y Computación de la **U.P.T.C.**, con la colaboración del siguiente equipo de trabajo:
+
+- [Elber Leon](https://github.com/Leon30)
+- [Angie Huertas](https://github.com/Angie0926)
+- Dayan Ramirez
+- Jonatán Pinto
